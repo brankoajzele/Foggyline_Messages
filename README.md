@@ -2,10 +2,10 @@ Foggyline_Messages
 ==================
 
 Default Magento installation has the following output sort order for its system messages: 
-* ERROR
-* WARNING
-* NOTICE 
-* SUCCESS 
+* ERROR (result of `Mage::getSingleton('core/session')->addError('Message here');`)
+* WARNING (result of `Mage::getSingleton('core/session')->addWarning('Message here');`)
+* NOTICE (result of `Mage::getSingleton('core/session')->addNotice('Message here');`)
+* SUCCESS (result of `Mage::getSingleton('core/session')->addSuccess('Message here');`)
  
 This sort order and entire HTML output are defined in `Mage_Core_Block_Messages` class within `getGroupedHtml()` method, so there is no theme *.phtml file you can edit to change the sort order. 
 
