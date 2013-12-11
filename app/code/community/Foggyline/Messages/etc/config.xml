@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Foggyline
+ * @package     Foggyline_Messages
+ * @author      Branko Ajzele <ajzele@gmail.com>
+ * @copyright   Copyright (c) Branko Ajzele
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Foggyline_Messages>
+            <version>1.0.0.0</version>
+        </Foggyline_Messages>
+    </modules>
+    <global>
+        <models>
+            <foggyline_messages>
+                <class>Foggyline_Messages_Model</class>
+            </foggyline_messages>
+        </models>
+        <blocks>
+            <core>
+                <rewrite>
+                    <messages>Foggyline_Messages_Block_Mage_Core_Messages</messages>
+                </rewrite>
+            </core>
+        </blocks>
+        <helpers>
+            <foggyline_messages>
+                <class>Foggyline_Messages_Helper</class>
+            </foggyline_messages>
+        </helpers>
+    </global>
+</config>
