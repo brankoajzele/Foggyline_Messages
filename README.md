@@ -7,7 +7,7 @@ Default Magento installation has the following output sort order for its system 
 * NOTICE 
 * SUCCESS 
  
-This sort order and entire HTML output are defined in Mage_Core_Block_Messages class within getGroupedHtml() method, so there is no theme *.phtml file you can edit to change the sort order. 
+This sort order and entire HTML output are defined in `Mage_Core_Block_Messages` class within `getGroupedHtml()` method, so there is no theme *.phtml file you can edit to change the sort order. 
 
 This extension enables you to change sort order through config, which is available under `System > Configuration > General > Design > Foggyline | Messages`.
 
